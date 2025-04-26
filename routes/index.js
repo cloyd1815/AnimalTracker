@@ -7,5 +7,7 @@ const userController =require('../controllers/userController.js');
 
 router.get('/', homeController.index);
 router.get('/users', userController.index);
+router.get('/login', homeController.login);
+router.post('/login', userController.login);
 
 module.exports = router;
